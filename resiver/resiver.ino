@@ -109,11 +109,11 @@ void updateMotors() {
     if (myData.left) {
         digitalWrite(motorB_IN3, HIGH);
         digitalWrite(motorB_IN4, LOW);
-        ledcWrite(motorB_PWM, 255); 
+        ledcWrite(motorB_PWM, 100); 
     } else if (myData.right) {
         digitalWrite(motorB_IN3, LOW);
         digitalWrite(motorB_IN4, HIGH);
-        ledcWrite(motorB_PWM, 255);
+        ledcWrite(motorB_PWM, 100);
     } else {
         digitalWrite(motorB_IN3, LOW);
         digitalWrite(motorB_IN4, LOW);
